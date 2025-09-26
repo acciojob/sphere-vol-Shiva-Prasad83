@@ -1,12 +1,13 @@
 const form=document.getElementById("MyForm");
 let vol=document.querySelector("#volume");
-function volume_sphere() {
+function volume_sphere(e) {
+	e.preventDefault();
   let radius=Number(form[0].value);
   radius=Math.pow(radius,3);
   let volume=(radius*4)/3;
   volume*=3.14;
   vol.value=volume;
-	
+	// e.target.reset();
 } 
 
 // window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
