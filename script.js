@@ -7,7 +7,7 @@ function volume_sphere(e) {
   let volume=(radius*4)
   volume*=Math.PI;
 	volume=volume/3;
-  vol.value=volume;
+  vol.value=volume.toFixed(4);
 	// e.target.reset();
 } 
 
