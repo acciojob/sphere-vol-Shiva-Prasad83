@@ -1,5 +1,5 @@
 const form=document.getElementById("MyForm");
-let vol=document.getElementById("volume");
+let vol=document.querySelector("#volume");
 function volume_sphere() {
   let radius=Number(form[0].value);
   radius=Math.pow(radius,3);
